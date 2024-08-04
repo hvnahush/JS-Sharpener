@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoteBook</title>
+</head>
+<style>
+    .container{
+        padding-left: 900px;
+    }
+    .main{
+        padding-left: 900px;
+    }
+    .note-form{
+        padding-top: 200px;
+    }
+</style>
+<body>
+    <h1 class="main">NoteBook</h1>
+    <div class="container">
+        <label>Search Notes :</label>
+        <input type="text" id="search" >
+        <p>Total Notes : <span id="totalNotes">0</span></p>
+        <p>Showing : <span id="showingNotes">0</span></p>
+    </div>
+    <div class="note-form">
+        <label for="noteTitle">Note Title:</label><br/>
+        <input type="text" id="noteTitle"/><br/>
+        <label for="noteDesc">Note Desc:</label><br/>
+        <textarea id="noteDesc" rows="4" cols="40"></textarea><br/>
+        <button onclick="addNote()">Add to Book</button>
+    </div>
+    <div id="notesContainer">
+
+    </div>
+    <button onclick="deleteNote()">Delete</button>
+</body>
+<script src="backend.js"></script>
+</html>
