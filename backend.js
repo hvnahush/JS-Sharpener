@@ -1,4 +1,4 @@
-let notes = [];
+let apiurl="https://crudcrud.com/api/df651714ad7d4049af574fc04042d44e/notes";
 
 function addNote() {
     const title = document.getElementById('noteTitle').value;
